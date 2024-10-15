@@ -28,11 +28,11 @@ jobs:
 
       # Step 4: Build the Angular app
       - name: Build Angular app
-        run: npm run build --base-href=/cicd/
+        run: npm run build
 
       # Step 5: Create CNAME file
       - name: Create CNAME file
-        run: echo "cicd.itkamianets.com" > ./dist/cicd/browser/CNAME
+        run: echo "cicd.itkamianets.com" > CNAME
 
       # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
